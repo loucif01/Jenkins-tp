@@ -20,7 +20,6 @@ pipeline {
         archiveArtifacts(artifacts: 'build/libs/*.jar , build/docs/javadoc/*', onlyIfSuccessful: true)
       }
     }
-
     stage('Deployment') {
       when {
         branch 'master'
