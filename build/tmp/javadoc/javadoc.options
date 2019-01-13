@@ -1,0 +1,8 @@
+-classpath 'C:\\mat\\build\\classes\\java\\main;C:\\mat\\build\\resources\\main'
+-d 'C:\\mat\\build\\docs\\javadoc'
+-doctitle 'mat 1.0 API'
+-quiet 
+-windowtitle 'mat 1.0 API'
+'C:\\mat\\src\\main\\java\\com\\example\\exception\\NoSquareException.java'
+'C:\\mat\\src\\main\\java\\com\\example\\model\\Matrix.java'
+'C:\\mat\\src\\main\\java\\com\\example\\service\\MatrixMathematics.java'

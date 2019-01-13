@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MatrixMathematicsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-12-06T08:53:54" hostname="user-PC" time="0.019">
+  <properties/>
+  <testcase name="testDeterminant" classname="MatrixMathematicsTest" time="0.01"/>
+  <testcase name="testCofactor" classname="MatrixMathematicsTest" time="0.007"/>
+  <testcase name="testDeterminantNonSquare" classname="MatrixMathematicsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
