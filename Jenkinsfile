@@ -16,7 +16,7 @@ pipeline {
       }
       steps {
         bat 'gradle build'
-        bat 'gradle myJavaDocs'
+        bat 'gradle javadocs'
         archiveArtifacts(artifacts: 'build/libs/*.jar , build/docs/javadoc/*', onlyIfSuccessful: true)
       }
     }
