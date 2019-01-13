@@ -7,10 +7,17 @@ pipeline {
         bat 'gradle uploadArchives'
       }
     }
-    stage('SonarQube') {
-      steps {
-        bat 'a'
-      }
-    }
+        stage('Code Analysis') {
+      parallel {
+        stage('Code Analysis') {
+          steps {
+            withSonarQubeEnv('sonarqube') {
+              bat 'sonar-scanner'
+            }
+
+            waitForQualityGate true
+          }
+        }
+
   }
 }
