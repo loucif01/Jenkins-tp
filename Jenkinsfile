@@ -20,7 +20,6 @@ pipeline {
         archiveArtifacts(artifacts: 'build/libs/*.jar , build/docs/javadoc/*', onlyIfSuccessful: true)
       }
     }
-    
     stage('Code Analysis') {
       parallel {
         stage('Code Analysis') {
@@ -39,6 +38,5 @@ pipeline {
         }
       }
     }
-    
   }
 }
