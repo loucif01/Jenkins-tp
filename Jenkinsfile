@@ -20,24 +20,7 @@ pipeline {
         archiveArtifacts(artifacts: 'build/libs/*.jar , build/docs/javadoc/*', onlyIfSuccessful: true)
       }
     }
-    stage('Code Analysis') {
-      parallel {
-        stage('Code Analysis') {
-          steps {
-            withSonarQubeEnv('sonarqube') {
-              bat 'sonar-scanner'
-            }
 
-            waitForQualityGate true
-          }
-        }
-        stage('Test Reporting') {
-          steps {
-            jacoco(buildOverBuild: true)
-          }
-        }
-      }
-    }
     stage('Deployment') {
       when {
         branch 'master'
