@@ -7,5 +7,10 @@ pipeline {
         bat 'gradle uploadArchives'
       }
     }
+    stage('SonarQube') {
+      steps {
+        bat 'a'
+      }
+    }
   }
 }
